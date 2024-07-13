@@ -44,4 +44,10 @@ describe('Testes da função soma', () => {
             soma(999, 2);
         }).toThrow('A soma dos números não pode ultrapassar 1000.');
     });
+
+    it('Deve lançar um erro se a soma for soma de números mais caracteres', () => {
+        expect(() => {
+            soma(9, '*');
+        }).toThrow('Favor informar apenas números.');
+    });
 });
