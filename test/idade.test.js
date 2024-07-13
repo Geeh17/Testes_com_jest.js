@@ -6,7 +6,7 @@ describe('Teste de Idade', () => {
     });
 
     it('Deve bloquear a entrada de menor de 16', () => {
-        expect(idade(10)).toBe('Idade não permitida. Procure seus pais!');
+        expect(idade(10)).toBe('Idade não permitida. Por favor procure seus pais!');
     });
 
     it('Deve retornar uma mensagem de erro se a entrada não for um número', () => {
